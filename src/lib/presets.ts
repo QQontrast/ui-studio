@@ -54,9 +54,15 @@ const basePresetConfig: ButtonConfig = {
   borderColor1: '#3b82f6',
   borderColor2: '#8b5cf6',
   borderAnimationSpeed: 3,
-  shimmer: false,
-  shimmerColor: '#ffffff',
-  shimmerSpeed: 2,
+  
+  // === ДОБАВЛЕННЫЕ ПОЛЯ ДЛЯ ГРАДИЕНТНОЙ ГРАНИЦЫ ===
+  gradientBorder: false,
+  gradientBorderAngle: 45,
+  gradientBorderColor1: '#3b82f6',
+  gradientBorderColor2: '#8b5cf6',
+  gradientBorderColor3: '#ec4899',
+  // ==================================================
+
   ripple: false,
   rippleColor: 'rgba(255, 255, 255, 0.6)',
   tilt3D: false,
@@ -103,8 +109,6 @@ export const buttonPresets: ButtonPreset[] = [
       gradientColor3: '#f43f5e',
       shadowColor: '#8b5cf6',
       shadowOpacity: 40,
-      shimmer: true,
-      shimmerSpeed: 2.5,
     },
   },
   {
